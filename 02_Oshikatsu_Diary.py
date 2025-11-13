@@ -37,7 +37,7 @@ with st.form("comment_form", clear_on_submit=True):
     elif submitted and not message:
         st.error('メッセージを入力してください！')
 
-st.header("💌 みんなの愛のメッセージ")
+st.header("💌 みんなの愛のメッセージだよ")
 
 # 3. 投稿されたコメントの表示
 if st.session_state.comments:

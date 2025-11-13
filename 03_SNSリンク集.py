@@ -22,7 +22,7 @@ sns_links = [
     {"name": "公式ウェブサイト/ブログ", "url": "https://obungu-official.jp/", "icon": "🌐", "color": "#28B463"},
 ]
 
-st.header('公式リンク')
+st.header('公式リンクぷ')
 cols = st.columns(len(sns_links)) # リンクの数だけカラムを作成
 
 for i, link in enumerate(sns_links):
