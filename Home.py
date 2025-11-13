@@ -7,12 +7,6 @@ st.set_page_config(
     layout="wide"  # 画面全体を使うワイドレイアウトに設定
 )
 
-st.title('お文具さんといっしょ 推し活部屋')
-st.markdown('ようこそ、お文具さんとみんなの世界へ！')
-
-
-st.info('左側のサイドバーから、各ページに移動できます。')
-
 with st.sidebar:
     st.header("🏠 ページナビゲーション")
     st.markdown("---") # 区切り線を追加
@@ -25,6 +19,14 @@ with st.sidebar:
     
     st.page_link("pages/3_SNS.py", label="SNSリンク集", icon="🌎")
     st.markdown("---")
+
+st.title('お文具さんといっしょ 推し活部屋')
+st.markdown('ようこそ、お文具さんとみんなの世界へ！')
+
+
+st.info('左側のサイドバーから、各ページに移動できます。')
+
+
 
 
 st.header('お知らせ')
