@@ -20,6 +20,9 @@ with st.sidebar:
     st.page_link("pages/3_SNS.py", label="SNSリンク集", icon="🌎")
     st.markdown("---")
 
+    st.page_link("pages/5?piture.py", label="イラストはこちら", icon="🖼")
+    st.markdown("---")
+
 st.title('お文具さんといっしょ 推し活部屋')
 st.markdown('ようこそ、お文具さんとみんなの世界へ！')
 
