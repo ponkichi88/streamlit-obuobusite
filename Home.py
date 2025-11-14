@@ -20,7 +20,7 @@ with st.sidebar:
     st.page_link("pages/3_SNS.py", label="SNSリンク集", icon="🌎")
     st.markdown("---")
 
-    st.page_link("pages/5_piture.py", label="イラストはこちら", icon="")
+    st.page_link("pages/5_piture.py", label="イラストはこちら", icon=None)
     st.markdown("---")
 
 st.title('お文具さんといっしょ 推し活部屋')
