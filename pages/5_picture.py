@@ -22,7 +22,7 @@ with col1:
     # ローカルの画像ファイルを指定 (アプリと同じディレクトリにあると仮定)
     # 実際には、画像ファイル名を正しいものに置き換えてください
     st.image(
-        'C:\Users\ponpo\OneDrive\Documents\VSコード\streamlit\streamlit-obuobusite\pages\E3Wun3WVoAIDFLS.jpg', 
+        'pages/E3Wun3WVoAIDFLS.jpg', 
         caption='まったり午後のプリンタイム', 
         width=300
     )
@@ -31,7 +31,7 @@ with col2:
     # 例 2: みんな集合のイラスト
     st.subheader("🎉 みんなでワイワイ")
     st.image(
-        'C:\Users\ponpo\OneDrive\Documents\VSコード\streamlit\streamlit-obuobusite\pages\ogp.png', 
+        'pages/ogp.png', 
         caption='全員集合！楽しそうな日常の風景', 
         use_column_width='always' # カラムの幅いっぱいに表示
     )
