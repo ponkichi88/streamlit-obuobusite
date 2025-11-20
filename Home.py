@@ -15,11 +15,11 @@ col_links = st.columns(3) # リンクを3列に並べる
 
 with col_links[0]:
     # 既存のリンクを移動
-    st.page_link("pages/1_Upload_Tiles.py", label="🖼️ タイル画像を投稿", icon=None) 
+    st.page_link("pages/1_アップロード.py", label="🖼️ タイル画像を投稿", icon=None) 
 
 with col_links[1]:
     # 既存のリンクを移動
-    st.page_link("pages/2_Create_Mosaic.py", label="🧩 モザイクアートを作成", icon=None) 
+    st.page_link("pages/2_モザイクアート作成.py", label="🧩 モザイクアートを作成", icon=None) 
     
 with col_links[2]:
     # ホームへのリンクを配置
