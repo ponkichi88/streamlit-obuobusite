@@ -1,0 +1,3 @@
+[general]
+# デフォルトのマルチページナビゲーション（ファイル名表示）を非表示にする
+showPageSidebar = false
