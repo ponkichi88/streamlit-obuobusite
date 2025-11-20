@@ -3,6 +3,13 @@ from PIL import Image
 import numpy as np
 from io import BytesIO
 
+# サイドバーに表示する場合 (例: pages/1_Upload_Tiles.py のコードのどこかに追加)
+with st.sidebar:
+    st.header("ページ移動")
+    st.page_link("pages/1_Upload_Tiles.py", label="🖼️ タイル画像を投稿", icon=None) 
+    st.page_link("pages/2_Create_Mosaic.py", label="🧩 モザイクアートを作成", icon=None) 
+    st.page_link("main.py", label="🏠 ホームに戻る", icon=None)
+
 st.set_page_config(
     page_title="タイル画像を投稿",
     layout="centered"
