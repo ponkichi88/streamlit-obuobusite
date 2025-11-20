@@ -10,12 +10,6 @@ from io import BytesIO
 
 
 
-# サイドバーに表示する場合 (例: pages/1_Upload_Tiles.py のコードのどこかに追加)
-with st.sidebar:
-    st.header("ページ移動")
-    st.page_link("pages/1_アップロード.py", label="🖼️ タイル画像を投稿", icon=None) 
-    st.page_link("pages/2_モザイクアート作成.py", label="🧩 モザイクアートを作成", icon=None) 
-    st.page_link("ホーム.py", label="🏠 ホームに戻る", icon=None)
 
 st.set_page_config(
     page_title="タイル画像を投稿",
