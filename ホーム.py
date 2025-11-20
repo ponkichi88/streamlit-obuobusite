@@ -23,7 +23,7 @@ with col_links[1]:
     
 with col_links[2]:
     # ホームへのリンクを配置
-    st.page_link("Home.py", label="🏠 ホームに戻る", icon=None)
+    st.page_link("ホーム.py", label="🏠 ホームに戻る", icon=None)
 
 st.header('使い方')
 st.markdown('''
