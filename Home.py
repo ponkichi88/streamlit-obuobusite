@@ -13,28 +13,7 @@ with st.sidebar:
 
     st.page_link("Home.py", label="ホーム", icon="🏠")
     st.page_link("pages/1_Character_Intro.py", label="キャラクター情報", icon="1️⃣")
-    
-    # 2ページ目のファイル名が「2_Oshikatsu_Diary.py」で正しいか確認
-    st.page_link("pages/2_Oshikatsu_Diary.py", label="お文具さんたちへの愛の言葉掲示板", icon="2️⃣", disabled=True)
-    
-    st.page_link("pages/3_SNS.py", label="SNSリンク集", icon="🌎")
+
+    st.page_link("pages/1_Mosaic_Art.py", label="モザイクアートメーカー", icon="🧩") # 🧩はパズルの絵文字
     st.markdown("---")
-
-    st.page_link("pages/5_picture.py", label="イラストはこちら", icon="🎨")
-    st.markdown("---")
-
-    st.page_link("pages/6_Mosaic_Art.py", label="モザイクアートメーカー", icon="🧩") # 🧩はパズルの絵文字
-    st.markdown("---")
-
-st.title('お文具さんといっしょ 推し活部屋')
-st.markdown('ようこそ、お文具さんとみんなの世界へ！')
-
-
-st.info('左側のサイドバーから、各ページに移動できます。')
-
-
-
-
-st.header('お知らせ')
-st.success('お文具さんといっしょのゲームが発売！')
 
