@@ -1,7 +1,5 @@
 # pages/1_Upload_Tiles.py
 
-# ホーム
-
 import streamlit as st
 from PIL import Image
 
