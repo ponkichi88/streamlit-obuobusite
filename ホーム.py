@@ -9,7 +9,7 @@ st.set_page_config(
 st.title('🎨 フォトタイルメーカー')
 st.markdown('あなたの写真で、世界に一つだけのモザイクアートを作りましょう！')
 
-st.subheader("🚀 クイックスタート")
+st.subheader("クイックスタート")
 
 col_links = st.columns(3) # リンクを3列に並べる
 
@@ -36,7 +36,7 @@ st.markdown('''
 
 # サイドバーにナビゲーションを設定
 with st.sidebar:
-    st.header("🏠 アプリメニュー")
+    st.header("アプリメニュー")
     st.markdown("---")
 
     st.info("左側のボタンをクリックしてページを移動してください。")
