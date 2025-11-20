@@ -65,7 +65,7 @@ if uploaded_main_file is not None:
         # モザイクの粗さ (元画像を何分の1に縮小するか)
         # 値が大きいほどタイルが細かく見え、元の画像に近くなる
         reduction_factor = st.slider(
-            "モザイクの粗さ (値が大きいほどタイルが細かく表示されます)",
+            "モザイクの粗さ (値が小さいほどタイルが細かく表示されます)",
             min_value=5,
             max_value=50,
             value=20,
