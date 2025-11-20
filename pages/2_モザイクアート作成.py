@@ -4,15 +4,6 @@ import numpy as np
 from io import BytesIO
 
 
-
-st.set_page_config(
-    page_title="モザイクアートを作成",
-    layout="wide"
-)
-
-st.title('🧩 モザイクアートを作成')
-st.markdown('モザイク化したい画像をアップロードし、タイル画像を使ってモザイクアートを生成します。')
-
 col_links = st.columns(2) # リンクを2列に並べる
 
 with col_links[0]:
@@ -22,6 +13,16 @@ with col_links[0]:
 with col_links[1]:
     # ホームへのリンクを配置
     st.page_link("ホーム.py", label="🏠 ホームに戻る", icon=None)
+    
+st.set_page_config(
+    page_title="モザイクアートを作成",
+    layout="wide"
+)
+
+st.title('🧩 モザイクアートを作成')
+st.markdown('モザイク化したい画像をアップロードし、タイル画像を使ってモザイクアートを生成します。')
+
+
 
 # --- (1) タイル画像の準備と平均色の計算 ---
 # セッションステートからタイル画像を読み込む
