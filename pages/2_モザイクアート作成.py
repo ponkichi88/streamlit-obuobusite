@@ -8,7 +8,7 @@ with st.sidebar:
     st.header("ページ移動")
     st.page_link("pages/1_アップロード.py", label="🖼️ タイル画像を投稿", icon=None) 
     st.page_link("pages/2_モザイクアート作成.py", label="🧩 モザイクアートを作成", icon=None) 
-    st.page_link("Home.py", label="🏠 ホームに戻る", icon=None)
+    st.page_link("ホーム.py", label="🏠 ホームに戻る", icon=None)
 
 st.set_page_config(
     page_title="モザイクアートを作成",
