@@ -14,7 +14,7 @@ with st.sidebar:
     st.header("🏠 アプリメニュー")
     st.markdown("---")
 
-    st.page_link("main.py", label="ホーム", icon="🏠")
+    st.page_link("Home.py", label="ホーム", icon="🏠")
     st.page_link("pages/1_Upload_Tiles.py", label="タイル画像を投稿", icon="🖼️")
     st.page_link("pages/2_Create_Mosaic.py", label="モザイクアートを作成", icon="🧩")
     
