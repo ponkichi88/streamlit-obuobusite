@@ -1,19 +1,29 @@
 import streamlit as st
 
-
-# ページの基本設定（この設定は各ページで設定できます）
+# ページの基本設定
 st.set_page_config(
-    page_title="お文具さん推し活アプリ",
-    layout="wide"  # 画面全体を使うワイドレイアウトに設定
+    page_title="フォトタイルメーカー",
+    layout="wide"
 )
 
+st.title('🎨 フォトタイルメーカー')
+st.markdown('あなたの写真で、世界に一つだけのモザイクアートを作りましょう！')
+
+# サイドバーにナビゲーションを設定
 with st.sidebar:
-    st.header("🏠 ページナビゲーション")
-    st.markdown("---") # 区切り線を追加
-
-    st.page_link("Home.py", label="ホーム", icon="🏠")
-    st.page_link("pages/1_Character_Intro.py", label="キャラクター情報", icon="1️⃣")
-
-    st.page_link("pages/1_Mosaic_Art.py", label="モザイクアートメーカー", icon="🧩") # 🧩はパズルの絵文字
+    st.header("🏠 アプリメニュー")
     st.markdown("---")
 
+    st.page_link("main.py", label="ホーム", icon="🏠")
+    st.page_link("pages/1_Upload_Tiles.py", label="タイル画像を投稿", icon="🖼️")
+    st.page_link("pages/2_Create_Mosaic.py", label="モザイクアートを作成", icon="🧩")
+    
+    st.markdown("---")
+    st.info("まずは「タイル画像を投稿」ページから、モザイクの素材となる写真をアップロードしてください。")
+
+st.header('使い方')
+st.markdown('''
+1.  **タイル画像を投稿ページ**で、モザイクアートの素材となる写真を複数枚アップロードします。
+2.  **モザイクアートを作成ページ**で、モザイク化したい元の画像を1枚アップロードします。
+3.  アップロードしたタイル画像を使って、モザイクアートが生成されます！
+''')
