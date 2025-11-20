@@ -1,10 +1,8 @@
 import streamlit as st
 
-page_title="ホーム"
-
 # ページの基本設定
 st.set_page_config(
-    page_title="フォトタイルメーカー",
+    page_title="ホーム",
     layout="wide"
 )
 
