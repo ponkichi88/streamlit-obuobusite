@@ -1,6 +1,6 @@
 # pages/1_Upload_Tiles.py
 
-# "ホーム"
+# ホーム
 
 import streamlit as st
 from PIL import Image
