@@ -65,7 +65,7 @@ uploaded_main_file = st.file_uploader("モザイクアートにしたい画像�
 if uploaded_main_file is not None:
     original_image = Image.open(uploaded_main_file).convert("RGB")
     
-    MAX_SIZE = 1000
+    MAX_SIZE = 2000
     w, h = original_image.size
 
     if max(w, h) > MAX_SIZE:
