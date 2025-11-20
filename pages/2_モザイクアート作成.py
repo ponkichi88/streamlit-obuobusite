@@ -123,3 +123,13 @@ if uploaded_main_file is not None:
             )
 else:
     st.info('モザイク化したい画像をアップロードしてください。')
+
+col_links = st.columns(2) # リンクを2列に並べる
+
+with col_links[0]:
+    # 既存のリンクを移動
+    st.page_link("pages/1_アップロード.py", label="🖼️ タイル画像を投稿", icon=None) 
+    
+with col_links[1]:
+    # ホームへのリンクを配置
+    st.page_link("ホーム.py", label="🏠 ホームに戻る", icon=None)
