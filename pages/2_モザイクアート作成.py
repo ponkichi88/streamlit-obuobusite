@@ -30,7 +30,7 @@ if 'uploaded_tiles_data' not in st.session_state or not st.session_state.uploade
     st.warning("先に「タイル画像を投稿」ページでタイル画像をアップロードしてください。")
     st.stop() # タイル画像がなければ処理を停止
 
-@st.cache_resource # タイル画像が変更されない限りキャッシュ
+@st.cache_data(show_spinner="タイル画像データを準備中") # タイル画像が変更されない限りキャッシュ
 def prepare_tiles(tiles_data):
     tiles = []
     avg_colors = []
@@ -64,6 +64,18 @@ uploaded_main_file = st.file_uploader("モザイクアートにしたい画像�
 
 if uploaded_main_file is not None:
     original_image = Image.open(uploaded_main_file).convert("RGB")
+    
+    MAX_SIZE = 1000
+    w, h = original_image.size
+
+    if max(w, h) > MAX_SIZE:
+        ratio = MAX_SIZE / max(w, h)
+        new_w = int(w * ratio)
+        new_h = int(h * ratio)
+
+        original_image = original_image.resize((new_w, new_h), Image.Resampling.LANCZOS)
+
+        st.warning(f"処理速度を速めるため、元の画像を{new_w} × {new_h}に縮小しました。")
     
     st.subheader("アップロードされた元の画像")
     st.image(original_image, caption="元の画像", use_column_width=True)
