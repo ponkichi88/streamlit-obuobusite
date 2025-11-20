@@ -1,7 +1,16 @@
+# pages/1_Upload_Tiles.py
+
+# "ホーム"
+
+import streamlit as st
+from PIL import Image
+
 import streamlit as st
 from PIL import Image
 import numpy as np
 from io import BytesIO
+
+
 
 # サイドバーに表示する場合 (例: pages/1_Upload_Tiles.py のコードのどこかに追加)
 with st.sidebar:
