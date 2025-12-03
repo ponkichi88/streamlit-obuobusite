@@ -32,7 +32,7 @@ with st.sidebar:
     st.info("まずは「タイル画像を投稿」ページから、モザイクの素材となる写真をアップロードしてください。")
 
 
-st.subheader("クイックスタート")
+st.subheader("下のボタンからスタートできます✨")
 
 col_links = st.columns(2) # リンクを2列に並べる
 
