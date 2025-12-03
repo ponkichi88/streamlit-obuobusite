@@ -6,7 +6,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title('🎨 フォトタイルメーカー')
+st.title('🎨 タイルアートメーカー')
 st.markdown('あなたの写真で、世界に一つだけのモザイクアートを作りましょう！')
 
 
